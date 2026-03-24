@@ -1,1 +1,66 @@
 @use '../abstracts' as *;
+
+.productCard {
+	background: $color-white;
+	display: flex;
+	flex-direction: column;
+	border-radius: 0.5rem;
+	overflow: hidden;
+
+	&__content {
+		padding: 2rem;
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+
+		&-tag {
+			color: $color-grey;
+			text-transform: uppercase;
+			font-size: 0.75rem;
+			letter-spacing: 0.313rem;
+		}
+
+		h1 {
+			color: $color-black;
+		}
+
+		p {
+			color: $color-grey;
+			line-height: 1.6;
+			font-weight: 500;
+		}
+
+		div {
+			display: flex;
+			align-items: center;
+			gap: 1rem;
+
+			strong {
+				color: $color-green-500;
+				font-size: 2rem;
+				font-weight: 700;
+			}
+
+			del {
+				color: $color-grey;
+				font-size: 0.813rem;
+				font-weight: 500;
+				line-height: 1.2;
+			}
+		}
+
+		button {
+			border: none;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 0.5rem;
+			background: $color-green-500;
+			color: $color-white;
+			font-size: 0.875rem;
+			font-weight: 700;
+			padding: 1rem 2rem;
+			border-radius: 0.5rem;
+		}
+	}
+}
