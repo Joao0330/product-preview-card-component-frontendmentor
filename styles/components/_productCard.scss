@@ -8,17 +8,17 @@
 	border-radius: 0.5rem;
 	overflow: hidden;
 
-	@include breakpointMobile(768px) {
+	@include breakpointMobile(48rem) {
 		flex-direction: row;
 	}
 
 	figure {
-		@include breakpointMobile(768px) {
+		@include breakpointMobile(48rem) {
 			width: 50%;
 		}
 
 		img {
-			@include breakpointMobile(768px) {
+			@include breakpointMobile(48rem) {
 				height: 100%;
 				object-fit: cover;
 			}
@@ -31,7 +31,7 @@
 		flex-direction: column;
 		gap: 1.5rem;
 
-		@include breakpointMobile(768px) {
+		@include breakpointMobile(48rem) {
 			width: 50%;
 		}
 
@@ -44,6 +44,7 @@
 
 		h1 {
 			color: $color-black;
+			line-height: 1;
 		}
 
 		p {
@@ -52,12 +53,12 @@
 			font-weight: 500;
 		}
 
-		div {
+		&-price {
 			display: flex;
 			align-items: center;
 			gap: 1rem;
 
-			@include breakpointMobile(768px) {
+			@include breakpointMobile(48rem) {
 				margin: calc(2rem - 1.5rem) 0;
 			}
 
@@ -90,7 +91,7 @@
 			border-radius: 0.5rem;
 			cursor: pointer;
 
-			@include breakpointMobile(991px) {
+			@include breakpointMobile(61.938rem) /* 991px */ {
 				transition: 0.3s;
 
 				&:hover {

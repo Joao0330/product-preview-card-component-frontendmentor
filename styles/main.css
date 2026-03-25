@@ -75,7 +75,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 100dvh;
   padding: 6rem 1rem;
 }
 
@@ -87,17 +87,17 @@ h1 {
   border-radius: 0.5rem;
   overflow: hidden;
 }
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .productCard {
     flex-direction: row;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .productCard figure {
     width: 50%;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .productCard figure img {
     height: 100%;
     -o-object-fit: cover;
@@ -110,7 +110,7 @@ h1 {
   flex-direction: column;
   gap: 1.5rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .productCard__content {
     width: 50%;
   }
@@ -123,29 +123,30 @@ h1 {
 }
 .productCard__content h1 {
   color: hsl(212, 21%, 14%);
+  line-height: 1;
 }
 .productCard__content p {
   color: hsl(228, 12%, 48%);
   line-height: 1.6;
   font-weight: 500;
 }
-.productCard__content div {
+.productCard__content-price {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
-@media (min-width: 768px) {
-  .productCard__content div {
+@media (min-width: 48rem) {
+  .productCard__content-price {
     margin: 0.5rem 0;
   }
 }
-.productCard__content div strong {
+.productCard__content-price strong {
   font-family: "Fraunces", serif;
   color: hsl(158, 36%, 37%);
   font-size: 2rem;
   font-weight: 700;
 }
-.productCard__content div del {
+.productCard__content-price del {
   color: hsl(228, 12%, 48%);
   font-size: 0.813rem;
   font-weight: 500;
@@ -165,7 +166,7 @@ h1 {
   border-radius: 0.5rem;
   cursor: pointer;
 }
-@media (min-width: 991px) {
+@media (min-width: 61.938rem) {
   .productCard__content button {
     transition: 0.3s;
   }
