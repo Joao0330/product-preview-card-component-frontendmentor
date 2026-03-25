@@ -1,17 +1,39 @@
 @use '../abstracts' as *;
 
 .productCard {
+	max-width: 37.5rem;
 	background: $color-white;
 	display: flex;
 	flex-direction: column;
 	border-radius: 0.5rem;
 	overflow: hidden;
 
+	@include breakpointMobile(768px) {
+		flex-direction: row;
+	}
+
+	figure {
+		@include breakpointMobile(768px) {
+			width: 50%;
+		}
+
+		img {
+			@include breakpointMobile(768px) {
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+	}
+
 	&__content {
 		padding: 2rem;
 		display: flex;
 		flex-direction: column;
 		gap: 1.5rem;
+
+		@include breakpointMobile(768px) {
+			width: 50%;
+		}
 
 		&-tag {
 			color: $color-grey;
@@ -35,7 +57,12 @@
 			align-items: center;
 			gap: 1rem;
 
+			@include breakpointMobile(768px) {
+				margin: calc(2rem - 1.5rem) 0;
+			}
+
 			strong {
+				font-family: 'Fraunces', serif;
 				color: $color-green-500;
 				font-size: 2rem;
 				font-weight: 700;
@@ -61,6 +88,15 @@
 			font-weight: 700;
 			padding: 1rem 2rem;
 			border-radius: 0.5rem;
+			cursor: pointer;
+
+			@include breakpointMobile(991px) {
+				transition: 0.3s;
+
+				&:hover {
+					background: $color-green-700;
+				}
+			}
 		}
 	}
 }
