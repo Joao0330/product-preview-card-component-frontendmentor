@@ -58,9 +58,9 @@
 			align-items: center;
 			gap: 1rem;
 
-			@include breakpointMobile(48rem) {
+			/* @include breakpointMobile(48rem) {
 				margin: calc(2rem - 1.5rem) 0;
-			}
+			} */
 
 			strong {
 				font-family: 'Fraunces', serif;

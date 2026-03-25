@@ -134,11 +134,9 @@ h1 {
   display: flex;
   align-items: center;
   gap: 1rem;
-}
-@media (min-width: 48rem) {
-  .productCard__content-price {
-    margin: 0.5rem 0;
-  }
+  /* @include breakpointMobile(48rem) {
+  	margin: calc(2rem - 1.5rem) 0;
+  } */
 }
 .productCard__content-price strong {
   font-family: "Fraunces", serif;
